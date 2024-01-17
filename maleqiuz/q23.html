@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../index.css">
+    <script src="../script.js" defer></script>
+    <title>Quantro ai</title>
+</head>
+
+<body>
+    <header class="container">
+        <div class="nav-logo"><a href="/" aria-label="">
+                <img src="../img/logo.svg" alt="logo">
+            </a><span class="login d-flex ms-auto align-center">
+                <img src="../img/question_icon.webp" alt="">
+                <a href="" class="text-decoration-none pl-15 fw-bold">LOG IN</a></span></div>
+    </header>
+    <!-- progress bar -->
+    <div class="container">
+        <div class="position-relative">
+            <div class="d-flex mb-20 text-none">
+                <div class="fw-bold ">Aligning with your goals</div>
+                <div class="percentage-container">
+                    <span class="percentage">0%</span>
+                </div>
+            </div>
+            <div class="first-progress-container">
+                <div id="progress-bar"></div>
+            </div>
+
+        </div>
+        <div id="popup">
+            <div class="popup-container border mx-auto bg3 rounded-8 text-center info-box mt-50 p-20 ">
+                <div>
+                    <p class="fs-12 color2">To move forward, specify</p>
+                    <p class="fw-bold">Are you inclined to finish what you start?</p>
+                    <div class="d-flex"><button class="bg4 border-0 btn-custom rounded-8 no-button">No</button>
+                        <button class="bg4 border-0 btn-custom rounded-8 yes-button">Yes</button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <!-- HTML code to display when the progress bar ends -->
+        <div id="completionDiv" class="d-flex border-bottom py-20" style="display: none;">
+            <div class="fw-bold fs-16">Goals</div>
+            <span class="ms-auto">
+                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="absolute right-[1.5px]">
+                    <circle cx="10" cy="10.5" r="10" fill="#7ABF4C"></circle>
+                    <path
+                        d="M6.25 10.6563L8.3639 13.1545C8.75902 13.6215 9.47706 13.6274 9.87986 13.1671L14.5833 7.79167"
+                        stroke="white" stroke-width="2" stroke-linecap="round"></path>
+                </svg>
+            </span>
+        </div>
+        
+        <!-- progress bar 2 -->
+        <div class="secondary-container mt-20" style="display: none;">
+            <!-- Second Progress Bar (Hidden Initially) -->
+            <div class="position-relative ">
+                <div class="d-flex mb-20 text-none-2">
+                    <div class="fw-bold">Setting skills to improve</div>
+                    <div class="percentage-container">
+                        <span class="percentage percentage-2 ">0%</span>
+                    </div>
+                </div>
+
+                <div class="second-progress-container">
+                    <div id="progress-bar-2"></div>
+                </div>
+
+            </div>
+            <!-- popup -->
+            <div id="popup-2"> <!-- Note the unique ID for the second progress bar's popup -->
+                <div class="popup-container-2 border mx-auto bg3 rounded-8 text-center info-box mt-50 p-20">
+                    <div>
+                        <p class="fs-12 color2">To move forward, specify</p>
+                        <p class="fw-bold text-change">Are you inclined to finish what you start?</p>
+                        <div class="d-flex">
+                            <button class="bg4 border-0 btn-custom rounded-8 no-button-2">No</button>
+                            <!-- Unique class for the No button -->
+                            <button class="bg4 border-0 btn-custom rounded-8 yes-button-2">Yes</button>
+                            <!-- Unique class for the Yes button -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- content after progress finishes -->
+            <div id="completionDiv-two" class="d-flex border-bottom py-20" style="display: none;">
+                <div class="fw-bold fs-16">Skills</div>
+                <span class="ms-auto">
+                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="absolute right-[1.5px]">
+                        <circle cx="10" cy="10.5" r="10" fill="#7ABF4C"></circle>
+                        <path
+                            d="M6.25 10.6563L8.3639 13.1545C8.75902 13.6215 9.47706 13.6274 9.87986 13.1671L14.5833 7.79167"
+                            stroke="white" stroke-width="2" stroke-linecap="round"></path>
+                    </svg>
+                </span>
+            </div>
+        </div>
+
+        <!-- progressbar 03 -->
+        <div class="third-container mt-20" style="display: none;">
+            <!-- third Progress Bar (Hidden Initially) -->
+            <div class="position-relative">
+                <div class="d-flex mb-20 text-none-3">
+                    <div class="fw-bold">Aligning with your goals</div>
+                    <div class="percentage-container">
+                        <span class="percentage percentage-3 ">0%</span>
+                    </div>
+                </div>
+
+                <div class="third-progress-container">
+                    <div id="progress-bar-3"></div>
+                </div>
+
+            </div>
+            <!-- popup -->
+            <div id="popup-3"> <!-- Note the unique ID for the third progress bar's popup -->
+                <div class="popup-container-3 border mx-auto bg3 rounded-8 text-center info-box mt-50 p-20">
+                    <div>
+                        <p class="fs-12 color2">To move forward, specify</p>
+                        <p class="fw-bold">Are you willing to learn how to create passive income streams?</p>
+                        <div class="d-flex">
+                            <button class="bg4 border-0 btn-custom rounded-8 no-button-3">No</button>
+                            <!-- Unique class for the No button -->
+                            <button class="bg4 border-0 btn-custom rounded-8 yes-button-3">Yes</button>
+                            <!-- Unique class for the Yes button -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="completionDiv-three" class="d-flex border-bottom py-20" style="display: none;">
+            <div class="fw-bold fs-16">Content</div>
+            <span class="ms-auto">
+                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="absolute right-[1.5px]">
+                    <circle cx="10" cy="10.5" r="10" fill="#7ABF4C"></circle>
+                    <path
+                        d="M6.25 10.6563L8.3639 13.1545C8.75902 13.6215 9.47706 13.6274 9.87986 13.1671L14.5833 7.79167"
+                        stroke="white" stroke-width="2" stroke-linecap="round"></path>
+                </svg>
+            </span>
+        </div>
+        <!-- button -->
+        <div class="position-fixed">
+            <div class="text-center mt-20">
+                <button class="btn theme-bg-primary w-100 theme-border-primary btn-custom py-20 text-white rounded-8 text-uppercase" style="display: none;">Continue</button>
+            </div>
+        </div>
+    </div>
+
+      <div class="position-fixed">
+        <div class="text-center mt-20 icons">
+            <img src="../img/icons/star.svg" alt="">
+            <img src="../img/icons/star.svg" alt="">
+            <img src="../img/icons/star.svg" alt="">
+            <img src="../img/icons/star.svg" alt="">
+            <img src="../img/icons/star.svg"  alt="">
+            <div class="fw-bold fs-16 mt-10">1.4M+ people choose us</div>
+    </div>
+      </div>
+    </form>
+
+
+<!-- js -->
+</body>
+
+</html>

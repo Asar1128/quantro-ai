@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../index.css">
+    <title>Quantro ai</title>
+</head>
+
+<body>
+    <header class="container">
+        <div class="nav-logo"><a href="/" aria-label="">
+                <img src="../img/logo.svg" alt="logo">
+            </a><span class="login d-flex ms-auto align-center">
+                <img src="../img/question_icon.webp" alt="">
+                <a href="" class="text-decoration-none pl-15 fw-bold">LOG IN</a></span></div>
+    </header>
+    <!-- progress bar -->
+    <div class="progress-bar container">
+        <div class="progress-bg">
+            <div class="active" style="width: 56%;"></div>
+        </div>
+        <div class="pages">14/25</div>
+    </div>
+<!-- willing pay per month -->
+    <form class="magicPill">
+        <div class="text-center container">
+            <h1 class=" fs-30 base-color">How much are you willing to pay per month for the services you have chosen in
+                the last question?</h1>
+            <div class="multi-select-items flex-wrap justify-content-center mt-30 ">
+                <div class="item me-10"><input type="checkbox" name="futureInvestment" id="control_01" value="10"><label
+                        class="d-flex align-center" for="control_01">
+                        <div><span class="fw-bold fs-16"> $10 </span></div>
+                    </label>
+                </div>
+                <div class="item me-10"><input type="checkbox" name="futureInvestment" id="control_02" value="25"><label
+                        class="d-flex align-center" for="control_02">
+                        <div><span class="fw-bold fs-16"> $25 </span></div>
+                    </label></div>
+                <div class="item me-10"><input type="checkbox" name="futureInvestment" id="control_03" value="50"><label
+                        class="d-flex align-center" for="control_03">
+                        <div><span class="fw-bold fs-16"> $50 </span></div>
+                    </label>
+                </div>
+                <div class="item me-10"><input type="checkbox" name="futureInvestment" id="control_04"
+                        value="100"><label class="d-flex align-center" for="control_04">
+                        <div><span class="fw-bold fs-16"> $100 </span></div>
+                    </label>
+                </div>
+            </div>
+            <div class="mt-30 position-fixed">
+                <button
+                    class="theme-bg-primary w-100 theme-border-primary btn-custom py-20 text-white rounded-8 text-uppercase"
+                    title="45+">Continue
+                </button>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
